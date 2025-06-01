@@ -229,40 +229,6 @@ export default function Home() {
     const url = `https://op.gg/es/lol/summoners/euw/${link}`;
     window.open(url, '_blank');
   };
-  const getEstadoJugador = (estado: boolean) =>{
-    if(estado){
-      return (<span
-          style={{
-            fontSize: "1.5rem",
-            color: "#1e90ff",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            width: "100%",
-          }}
-          title={"JUGANDO!"}
-        >
-          🟢
-        </span>)
-        }
-      else{
-        return (<span
-          style={{
-            fontSize: "1.5rem",
-            color: "#1e90ff",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            width: "100%",
-          }}
-          title={"Desconectado"}
-        >
-          🔴
-        </span>)
-        }
-      }
   
   const getActividadEmoji = (wins?: number, losses?: number) => {
     const total = (wins ?? 0) + (losses ?? 0);
